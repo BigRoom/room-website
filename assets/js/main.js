@@ -40,7 +40,7 @@
 
             $("#cta_click").click(function() {
                 vex.dialog.confirm({
-                    message: 'Enter your username and password:',
+                    message: 'Enter your email:',
                     input: $("#email_prompt").html(),
                     callback: function(data) {
                         if (data === false) {
