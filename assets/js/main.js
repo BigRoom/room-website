@@ -36,7 +36,28 @@
 					'.important\\28 narrower\\29',
 					skel.breakpoint('narrower').active
 				);
-			});
+            });
+
+            $("#cta_click").click(function() {
+                vex.dialog.confirm({
+                    message: 'Enter your username and password:',
+                    input: $("#email_prompt").html(),
+                    callback: function(data) {
+                        if (data === false) {
+                            return console.log('Cancelled');
+                        }
+
+                        return console.log("Email: %s", data.email);
+                    },
+                    buttons: [
+                        $.extend({}, vex.dialog.buttons.YES, {
+                            text: 'Ready!'
+                        }), $.extend({}, vex.dialog.buttons.NO, {
+                            text: 'Not ready.'
+                        })
+                    ]
+                });
+            });
 
 	});
 
