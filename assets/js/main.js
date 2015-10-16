@@ -47,12 +47,13 @@
                             return console.log('Cancelled');
                         }
 
-                        return console.log("Email: %s", data.email);
+                        $('#email').val(data.email);
+                        $('#submit_email').submit();
+
+                        console.log('Submitted')
                     },
                     buttons: [
-                        $.extend({}, vex.dialog.buttons.YES, {
-                            text: 'Ready!'
-                        }), $.extend({}, vex.dialog.buttons.NO, {
+                        $.extend({}, vex.dialog.buttons.NO, {
                             text: 'Not ready.'
                         })
                     ]
