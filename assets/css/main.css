@@ -2824,6 +2824,7 @@
 			#header {
 				background-attachment: scroll,							scroll,							scroll;
 				background-image: url("images/top-1600.svg"), url("http://i.imgur.com/wt5P90w.jpg?1"), url("../../images/header.jpg");
+                background-repeat: repeat-x,						repeat,					no-repeat;
 				background-size: 1600px 230px,					cover,							cover;
 				padding: 6em 0 12em 0;
 			}
