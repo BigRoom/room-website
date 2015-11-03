@@ -2517,7 +2517,7 @@
 		text-align: center;
 	}
 
-		#header:before, #header:after {
+		/*#header:before,*/ #header:after {
 			background: rgba(224, 224, 224, 0.75);
 			content: '';
 			left: 50%;
@@ -2525,12 +2525,12 @@
 			width: 1px;
 			z-index: 0;
 		}
-
+        /*
 		#header:before {
 			height: calc(100% - 50px);
 			opacity: 0.15;
 			top: 0;
-		}
+		}*/
 
 		#header:after {
 			bottom: 0;
@@ -2828,10 +2828,10 @@
 				background-size: 1600px 230px,					cover,							cover;
 				padding: 6em 0 12em 0;
 			}
-
+                /*
 				#header:before {
 					height: calc(100% - 25px);
-				}
+				}*/
 
 				#header:after {
 					height: 25px;
@@ -2990,10 +2990,10 @@
 				background-size: 1280px 184px,						auto,							cover;
 				padding: 3em 0 7em 0;
 			}
-
+                /*
 				#header:before {
 					height: calc(100% - 20px);
-				}
+				}*/
 
 				#header:after {
 					height: 20px;
